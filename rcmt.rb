@@ -5,24 +5,24 @@
 class Rcmt < Formula
   desc "A rudimentary configuration management tool for Slack Challenge."
   homepage "https://Github.com/obay/rcmt"
-  version "0.5.0"
+  version "0.9.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "http://github.com/obay/rcmt/releases/download/v0.5.0/rcmt_0.5.0_Darwin_x86_64.tar.gz"
-    sha256 "18db24233dff5d5f342978cf52afa215f2110381404bd4ecedd15edbd5a292c0"
+    url "http://github.com/obay/rcmt/releases/download/v0.9.0/rcmt_0.9.0_Darwin_x86_64.tar.gz"
+    sha256 "1292e3f70e38f0229858a2dfefedef8d1aa1d64407a3b2c6a8fe16f1a4d814cd"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "http://github.com/obay/rcmt/releases/download/v0.5.0/rcmt_0.5.0_Darwin_arm64.tar.gz"
-    sha256 "de1a37788b8a151610f8751cc406400972665462ed1a9fbdc95e835f3160717b"
+    url "http://github.com/obay/rcmt/releases/download/v0.9.0/rcmt_0.9.0_Darwin_arm64.tar.gz"
+    sha256 "1d0cdc1c0262294c9e838853a7a4d0002943303c082103540099104204a65dbe"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "http://github.com/obay/rcmt/releases/download/v0.5.0/rcmt_0.5.0_Linux_x86_64.tar.gz"
-    sha256 "09dd23e93e4459616bda05decf4274031b61cc1bfe5f4aa2c8ca793e795c26bd"
+    url "http://github.com/obay/rcmt/releases/download/v0.9.0/rcmt_0.9.0_Linux_x86_64.tar.gz"
+    sha256 "789bd249aadd02de015684879a5ed225260e6fcd614ecefa9d2a8371ddcb7034"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "http://github.com/obay/rcmt/releases/download/v0.5.0/rcmt_0.5.0_Linux_arm64.tar.gz"
-    sha256 "912126f7e8302f4e4c76c9768ac848a4a9ca77cb94fba0d846955c66c8a71b17"
+    url "http://github.com/obay/rcmt/releases/download/v0.9.0/rcmt_0.9.0_Linux_arm64.tar.gz"
+    sha256 "5f5ebe4ce841369346eab607a2f72431a8674be8b95f0a698554499601d839b4"
   end
 
   depends_on "go" => :build
