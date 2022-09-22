@@ -5,22 +5,22 @@
 class Tfren < Formula
   desc "A tool to rename Terraform files accodrind to the resource type and name."
   homepage "https://github.com/obay/tfren"
-  version "0.1.17"
+  version "0.1.18"
 
   depends_on "go" => :build
 
   on_macos do
     if Hardware::CPU.arm?
-      url "http://github.com/obay/tfren/releases/download/v0.1.17/tfren_0.1.17_Darwin_arm64.tar.gz"
-      sha256 "cd877cc25e9811e6369bbb5657fd5c90d4d97b88a937306110088c5a7e57fc5c"
+      url "http://github.com/obay/tfren/releases/download/v0.1.18/tfren_0.1.18_Darwin_arm64.tar.gz"
+      sha256 "76cfa7d6dbdf1e0aa964bc0ae1353f796dc4818989a9ce22b8ef3f468e05853a"
 
       def install
         bin.install "tfren"
       end
     end
     if Hardware::CPU.intel?
-      url "http://github.com/obay/tfren/releases/download/v0.1.17/tfren_0.1.17_Darwin_x86_64.tar.gz"
-      sha256 "5513731b637f49d6484b6ffe9e56bca90ea927f016390037cf320ed2b26d8e00"
+      url "http://github.com/obay/tfren/releases/download/v0.1.18/tfren_0.1.18_Darwin_x86_64.tar.gz"
+      sha256 "d6aaf0f8e8cd34b98b79aee9c201eece70f2d0244ec516fa7829a2ef4edaefc3"
 
       def install
         bin.install "tfren"
@@ -30,16 +30,16 @@ class Tfren < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "http://github.com/obay/tfren/releases/download/v0.1.17/tfren_0.1.17_Linux_arm64.tar.gz"
-      sha256 "13c3ecef6220888399f62b59fbf2e42e906432f548c97b9708b8b6f4f56a5e70"
+      url "http://github.com/obay/tfren/releases/download/v0.1.18/tfren_0.1.18_Linux_arm64.tar.gz"
+      sha256 "7aa62d7318d8b1c3df4c1d2727e3a13443b7e59f3d7565e6c0f8fbc119038caa"
 
       def install
         bin.install "tfren"
       end
     end
     if Hardware::CPU.intel?
-      url "http://github.com/obay/tfren/releases/download/v0.1.17/tfren_0.1.17_Linux_x86_64.tar.gz"
-      sha256 "c2b396f1699e610a8ac3447279a363b40b71dc55be255d7f15274d94f86ab3fa"
+      url "http://github.com/obay/tfren/releases/download/v0.1.18/tfren_0.1.18_Linux_x86_64.tar.gz"
+      sha256 "2b1e9d9fef86ea35a06d538accae2a641df70b4b9e746c610cb51fb55c66e042"
 
       def install
         bin.install "tfren"
