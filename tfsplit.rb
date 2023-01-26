@@ -5,22 +5,22 @@
 class Tfsplit < Formula
   desc "A tool to rename Terraform files accodrind to the resource type and name."
   homepage "https://github.com/obay/tfsplit"
-  version "0.0.1"
+  version "2.0.7"
 
   depends_on "go" => :build
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "http://github.com/obay/tfsplit/releases/download/v0.0.1/tfsplit_0.0.1_darwin_amd64.tar.gz"
-      sha256 "3c3dace21bb803567956a13534bb59c7ea74988a45dbaa0995b3a8d4f4079526"
+    if Hardware::CPU.arm?
+      url "http://github.com/obay/tfsplit/releases/download/v2.0.7/tfsplit_2.0.7_darwin_arm64.tar.gz"
+      sha256 "fd140adba8eb82019c66ceecc7f060f3d0c0fdc00ef8d6432d92b1310140c6a2"
 
       def install
         bin.install "tfsplit"
       end
     end
-    if Hardware::CPU.arm?
-      url "http://github.com/obay/tfsplit/releases/download/v0.0.1/tfsplit_0.0.1_darwin_arm64.tar.gz"
-      sha256 "99ba792b919c12b10be853e16cf1833c1c862b27490d50e7a02b3ad7b89a9c23"
+    if Hardware::CPU.intel?
+      url "http://github.com/obay/tfsplit/releases/download/v2.0.7/tfsplit_2.0.7_darwin_amd64.tar.gz"
+      sha256 "1b91f45d993a1489d3b349cf6295a2badeae32c1a2c9e5b3085edf3499130e5d"
 
       def install
         bin.install "tfsplit"
@@ -30,16 +30,16 @@ class Tfsplit < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "http://github.com/obay/tfsplit/releases/download/v0.0.1/tfsplit_0.0.1_linux_arm64.tar.gz"
-      sha256 "a32c1de68d8d719a562f33d75a6ce127d2708a523870d9cb214d345b75a3394e"
+      url "http://github.com/obay/tfsplit/releases/download/v2.0.7/tfsplit_2.0.7_linux_arm64.tar.gz"
+      sha256 "cb60e58db3a14f8a4541650aea30f4cee4f231f1052b096354082aba36e45b7d"
 
       def install
         bin.install "tfsplit"
       end
     end
     if Hardware::CPU.intel?
-      url "http://github.com/obay/tfsplit/releases/download/v0.0.1/tfsplit_0.0.1_linux_amd64.tar.gz"
-      sha256 "54427f3e8d69e920c6b3136e649116cef365e53fa1cba46edf5bc56aea531e65"
+      url "http://github.com/obay/tfsplit/releases/download/v2.0.7/tfsplit_2.0.7_linux_amd64.tar.gz"
+      sha256 "b2082a52016524712a51c26bb43ef02b33d4457da1f96efab7fc13dfc72a8e84"
 
       def install
         bin.install "tfsplit"
