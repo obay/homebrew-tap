@@ -5,22 +5,22 @@
 class Tfsplit < Formula
   desc "A tool to rename Terraform files accodrind to the resource type and name."
   homepage "https://github.com/obay/tfsplit"
-  version "0.0.2"
+  version "0.0.5"
 
   depends_on "go" => :build
 
   on_macos do
     if Hardware::CPU.arm?
-      url "http://github.com/obay/tfsplit/releases/download/v0.0.2/tfsplit_0.0.2_darwin_arm64.tar.gz"
-      sha256 "32d3ffc6b1960c5111c001b95f66346fb6253517dfc1d609df5526339a8868ea"
+      url "http://github.com/obay/tfsplit/releases/download/v0.0.5/tfsplit_0.0.5_darwin_arm64.tar.gz"
+      sha256 "2a49e19e3fc162f54ec3b822b9b1b8ffb8f7cd7847ae56ba3b902c40f62d21d7"
 
       def install
         bin.install "tfsplit"
       end
     end
     if Hardware::CPU.intel?
-      url "http://github.com/obay/tfsplit/releases/download/v0.0.2/tfsplit_0.0.2_darwin_amd64.tar.gz"
-      sha256 "425a19123027f3a07bab212fdb275c1bd66c8c77f167065ceada3779c1c3c905"
+      url "http://github.com/obay/tfsplit/releases/download/v0.0.5/tfsplit_0.0.5_darwin_amd64.tar.gz"
+      sha256 "ddca72d51cd9f988b82164dc045b8ee9298a362b53f1ce7c9020516b9ec121a3"
 
       def install
         bin.install "tfsplit"
@@ -30,16 +30,16 @@ class Tfsplit < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "http://github.com/obay/tfsplit/releases/download/v0.0.2/tfsplit_0.0.2_linux_arm64.tar.gz"
-      sha256 "4d1554e1d115b4b7544a9a86f7e1d8aae8da3f476e48f2088a9f00edf32a09d2"
+      url "http://github.com/obay/tfsplit/releases/download/v0.0.5/tfsplit_0.0.5_linux_arm64.tar.gz"
+      sha256 "6d0ea302ff1bc994cd0c4eaa6b108d74e3a6fd1bdb9d142bd31a610a631c88ec"
 
       def install
         bin.install "tfsplit"
       end
     end
     if Hardware::CPU.intel?
-      url "http://github.com/obay/tfsplit/releases/download/v0.0.2/tfsplit_0.0.2_linux_amd64.tar.gz"
-      sha256 "4806707ab22fea3ac119e337fbd7e790d65a31c1fe36d86bbf21ed1719ef42b0"
+      url "http://github.com/obay/tfsplit/releases/download/v0.0.5/tfsplit_0.0.5_linux_amd64.tar.gz"
+      sha256 "0f1382f7427032c2bf3f8527422f0439db84d7e77905c7ec4171ef5fc5116a8f"
 
       def install
         bin.install "tfsplit"
