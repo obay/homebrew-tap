@@ -5,22 +5,22 @@
 class Tfren < Formula
   desc "A tool to rename Terraform files accodrind to the resource type and name."
   homepage "https://github.com/obay/tfren"
-  version "0.1.20"
+  version "0.1.22"
 
   depends_on "go" => :build
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "http://github.com/obay/tfren/releases/download/v0.1.20/tfren_0.1.20_Darwin_arm64.tar.gz"
-      sha256 "f43535f124214a01fcc91bfe37579199f025baee761d058a0ab037417704cab2"
+    if Hardware::CPU.intel?
+      url "http://github.com/obay/tfren/releases/download/v0.1.22/tfren_0.1.22_Darwin_x86_64.tar.gz"
+      sha256 "e0fc6a4e30c41878444c6be3dfa08edad8bff86ce92c8ed9c6d9e73703dd16fd"
 
       def install
         bin.install "tfren"
       end
     end
-    if Hardware::CPU.intel?
-      url "http://github.com/obay/tfren/releases/download/v0.1.20/tfren_0.1.20_Darwin_x86_64.tar.gz"
-      sha256 "edcceb779f63994bf10032b80194e6f0240e260484a94fcacd6c09e8fec9e13e"
+    if Hardware::CPU.arm?
+      url "http://github.com/obay/tfren/releases/download/v0.1.22/tfren_0.1.22_Darwin_arm64.tar.gz"
+      sha256 "b2bc503674ebf156bffa9bb31a33b01843ab2ab0858273dede2923dc0dd1a796"
 
       def install
         bin.install "tfren"
@@ -30,16 +30,16 @@ class Tfren < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "http://github.com/obay/tfren/releases/download/v0.1.20/tfren_0.1.20_Linux_arm64.tar.gz"
-      sha256 "3c62731ed7adbad9a98658bef0284f36663ac53e3f4f3b73839947f8fb5da9bf"
+      url "http://github.com/obay/tfren/releases/download/v0.1.22/tfren_0.1.22_Linux_arm64.tar.gz"
+      sha256 "ed6197a10964d76c15b1b761904e0c72dbed41078e84e4cd7060c36495c2b3ae"
 
       def install
         bin.install "tfren"
       end
     end
     if Hardware::CPU.intel?
-      url "http://github.com/obay/tfren/releases/download/v0.1.20/tfren_0.1.20_Linux_x86_64.tar.gz"
-      sha256 "f866c54663e242a7c7d2a60539a562a22559e22aa73c0ea944f362fcfdfb47fc"
+      url "http://github.com/obay/tfren/releases/download/v0.1.22/tfren_0.1.22_Linux_x86_64.tar.gz"
+      sha256 "002d2159fbacb61bf1dbbccb7495901200efa9b4a55c192c0885b719f95148f9"
 
       def install
         bin.install "tfren"
