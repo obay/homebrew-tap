@@ -5,21 +5,21 @@
 class Azhubreader < Formula
   desc "Extract Azure Event Hub messages into JSON files"
   homepage "https://github.com/obay/azhubreader"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "http://github.com/obay/azhubreader/releases/download/v0.1.6/azhubreader_Darwin_x86_64.tar.gz"
-      sha256 "a21b7866befa36725b3dac2f9ab9bb26590fe69ef4c80da695787f10c87cebaf"
+      url "http://github.com/obay/azhubreader/releases/download/v0.1.7/azhubreader_Darwin_x86_64.tar.gz"
+      sha256 "60dd794590114576ff3aaa4cfcdf022ec1f91ece0bf54a1941be51cc1ba58a92"
 
       def install
         bin.install "azhubreader"
       end
     end
     on_arm do
-      url "http://github.com/obay/azhubreader/releases/download/v0.1.6/azhubreader_Darwin_arm64.tar.gz"
-      sha256 "e4ba513e3d26f9fab1e959646d972fc4da5f980b9fc9e59befdb243b1549e758"
+      url "http://github.com/obay/azhubreader/releases/download/v0.1.7/azhubreader_Darwin_arm64.tar.gz"
+      sha256 "77539aa881742bfceed93526f9e058aa5acc171c69f8ab33cfe4b6ac827496b7"
 
       def install
         bin.install "azhubreader"
@@ -30,8 +30,8 @@ class Azhubreader < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "http://github.com/obay/azhubreader/releases/download/v0.1.6/azhubreader_Linux_x86_64.tar.gz"
-        sha256 "6be54c438c0d33cf0824db6df8379dc851e55a7878a6fb4f57bf78b0841f7104"
+        url "http://github.com/obay/azhubreader/releases/download/v0.1.7/azhubreader_Linux_x86_64.tar.gz"
+        sha256 "f233ab07d4779da3e9abebe786a8e333a380833aff875af8d567a70ea5b178bf"
 
         def install
           bin.install "azhubreader"
@@ -40,8 +40,8 @@ class Azhubreader < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "http://github.com/obay/azhubreader/releases/download/v0.1.6/azhubreader_Linux_arm64.tar.gz"
-        sha256 "dc901e015c93b5937d10bbe496ffce1e49487293d26e62cb2d37c3e74b2af0d6"
+        url "http://github.com/obay/azhubreader/releases/download/v0.1.7/azhubreader_Linux_arm64.tar.gz"
+        sha256 "097a73c8761e9828c3e478a66d5231ae4556f41589c5603d625c442c451d4939"
 
         def install
           bin.install "azhubreader"
