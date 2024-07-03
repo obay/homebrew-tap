@@ -1,0 +1,29 @@
+{
+    "version": "0.1.5",
+    "architecture": {
+        "32bit": {
+            "url": "http://github.com/obay/azhubreader/releases/download/v0.1.5/azhubreader_Windows_i386.zip",
+            "bin": [
+                "azhubreader.exe"
+            ],
+            "hash": "e544522d125e1726c98bf05b1c517d28b87ae7667f61e1765e80b147913d0345"
+        },
+        "64bit": {
+            "url": "http://github.com/obay/azhubreader/releases/download/v0.1.5/azhubreader_Windows_x86_64.zip",
+            "bin": [
+                "azhubreader.exe"
+            ],
+            "hash": "ee7b7d7c94b5cddd91682de7ab5fda003ad662903b74c1b391923701e2c06b67"
+        },
+        "arm64": {
+            "url": "http://github.com/obay/azhubreader/releases/download/v0.1.5/azhubreader_Windows_arm64.zip",
+            "bin": [
+                "azhubreader.exe"
+            ],
+            "hash": "8f0a913e748095a98496ca5d48cdf48539d83da92d24238d250e8cb987f2abed"
+        }
+    },
+    "homepage": "https://github.com/obay/azhubreader",
+    "license": "MIT",
+    "description": "Extract Azure Event Hub messages into JSON files"
+}
