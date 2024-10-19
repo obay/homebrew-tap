@@ -5,22 +5,22 @@
 class Tfren < Formula
   desc "A tool to rename Terraform files accodrind to the resource type and name."
   homepage "https://github.com/obay/tfren"
-  version "0.1.22"
+  version "0.4.3"
 
   depends_on "go" => :build
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "http://github.com/obay/tfren/releases/download/v0.1.22/tfren_0.1.22_Darwin_x86_64.tar.gz"
-      sha256 "e0fc6a4e30c41878444c6be3dfa08edad8bff86ce92c8ed9c6d9e73703dd16fd"
+    on_intel do
+      url "http://github.com/obay/tfren/releases/download/v0.4.3/tfren_Darwin_x86_64.tar.gz"
+      sha256 "8fdd4aa2593c630c0ad930af57eea22475abf56f2d7351f706186f91ead08ebb"
 
       def install
         bin.install "tfren"
       end
     end
-    if Hardware::CPU.arm?
-      url "http://github.com/obay/tfren/releases/download/v0.1.22/tfren_0.1.22_Darwin_arm64.tar.gz"
-      sha256 "b2bc503674ebf156bffa9bb31a33b01843ab2ab0858273dede2923dc0dd1a796"
+    on_arm do
+      url "http://github.com/obay/tfren/releases/download/v0.4.3/tfren_Darwin_arm64.tar.gz"
+      sha256 "c7e9debc661e94e5bf6cf12a6d22b3a32e7caf7ddea62221fdfc1a951b534435"
 
       def install
         bin.install "tfren"
@@ -29,20 +29,24 @@ class Tfren < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "http://github.com/obay/tfren/releases/download/v0.1.22/tfren_0.1.22_Linux_arm64.tar.gz"
-      sha256 "ed6197a10964d76c15b1b761904e0c72dbed41078e84e4cd7060c36495c2b3ae"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "http://github.com/obay/tfren/releases/download/v0.4.3/tfren_Linux_x86_64.tar.gz"
+        sha256 "41db7d26ca4fe51fb35389973f2312fe29188fff5779ed4924824e6fbc71306a"
 
-      def install
-        bin.install "tfren"
+        def install
+          bin.install "tfren"
+        end
       end
     end
-    if Hardware::CPU.intel?
-      url "http://github.com/obay/tfren/releases/download/v0.1.22/tfren_0.1.22_Linux_x86_64.tar.gz"
-      sha256 "002d2159fbacb61bf1dbbccb7495901200efa9b4a55c192c0885b719f95148f9"
+    on_arm do
+      if Hardware::CPU.is_64_bit?
+        url "http://github.com/obay/tfren/releases/download/v0.4.3/tfren_Linux_arm64.tar.gz"
+        sha256 "a5777cd0dc085dc9d9d00f11b0b9c41734d408d0f0d05f5f15429f3f09b2a780"
 
-      def install
-        bin.install "tfren"
+        def install
+          bin.install "tfren"
+        end
       end
     end
   end
