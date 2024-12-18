@@ -12,7 +12,7 @@ class Tfren < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "http://github.com/obay/tfren/releases/download/v0.6.1/tfren_Darwin_x86_64.tar.gz"
-      sha256 "28166bcc811432c4d01d7ffd48f5d2096882807109428990f8fdbe344efd7c6f"
+      sha256 "2ff1e44a9969e551cfa8c0e6d8837e15247ac8f240f540c15f7f48bbb9684c89"
 
       def install
         bin.install "tfren"
@@ -20,7 +20,7 @@ class Tfren < Formula
     end
     if Hardware::CPU.arm?
       url "http://github.com/obay/tfren/releases/download/v0.6.1/tfren_Darwin_arm64.tar.gz"
-      sha256 "74b63faf8f25b11f7cacd1ef8defad1aff05214de9192d7c910eda109d60e695"
+      sha256 "eb96aea0b2f6d86ab43cf4f259c544a4493c0573da09b750bd562a4cbaf7666e"
 
       def install
         bin.install "tfren"
@@ -32,7 +32,7 @@ class Tfren < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "http://github.com/obay/tfren/releases/download/v0.6.1/tfren_Linux_x86_64.tar.gz"
-        sha256 "1c0c06d99014118959d185dbdd214c4ca1c9266a5ada8685d0b36357cdd72bfd"
+        sha256 "2dad6a93b50737c1693d631cc119a8bc4151c7738da63d64682233a68a685c3e"
 
         def install
           bin.install "tfren"
@@ -42,7 +42,7 @@ class Tfren < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "http://github.com/obay/tfren/releases/download/v0.6.1/tfren_Linux_arm64.tar.gz"
-        sha256 "27b3100640fff6a5b9226e6b253ef0ce9f61c2a4aa29d70962df14809ce0f737"
+        sha256 "7c04c912d6c95af4f483b7f7429c518ac38f871f63ab9f0e55aaa32628ae1864"
 
         def install
           bin.install "tfren"
