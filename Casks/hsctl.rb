@@ -3,7 +3,7 @@ cask "hsctl" do
   name "hsctl"
   desc "A CLI tool for managing HubSpot contacts"
   homepage "https://github.com/obay/hsctl"
-  version "0.1.2"
+  version "0.2.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "hsctl" do
     on_intel do
       url "https://github.com/obay/hsctl/releases/download/v#{version}/hsctl_darwin_amd64.tar.gz",
         verified: "github.com/obay/hsctl"
-      sha256 "4598c05fbb464c94d42a8307021d628b278d8d0ab59d6816680aeb20cf1d3a49"
+      sha256 "f30c7da37b8a167ec84107a22e4ccf8ad2602840ddb2575537e7cba2d09bcbb3"
     end
     on_arm do
       url "https://github.com/obay/hsctl/releases/download/v#{version}/hsctl_darwin_arm64.tar.gz",
         verified: "github.com/obay/hsctl"
-      sha256 "04a379abed55364a7f6202a78c3808a5d3f376b95c252a57789c8ec29206fb7a"
+      sha256 "440fa11ccbd08960508c42f50c1d11d9e5aa2bde583fb3d4b2479d8f12bf3065"
     end
   end
 
@@ -28,12 +28,12 @@ cask "hsctl" do
     on_intel do
       url "https://github.com/obay/hsctl/releases/download/v#{version}/hsctl_linux_amd64.tar.gz",
         verified: "github.com/obay/hsctl"
-      sha256 "96cc7108f7d6618a0cc50ce34022add306ac1273496d00b427949c30074b3c80"
+      sha256 "13d5b9d710e52c8633c90c32653aed57905e434ea66056a340bab6e495138750"
     end
     on_arm do
       url "https://github.com/obay/hsctl/releases/download/v#{version}/hsctl_linux_arm64.tar.gz",
         verified: "github.com/obay/hsctl"
-      sha256 "0079dda8e5ca814e0e6a71d6f9f31cf810671fc51796b814866eca6d71ec3ff7"
+      sha256 "5ac631d06a94d172ca4e176dd4997a6ecb48f3905f644d086602d90876661664"
     end
   end
 
