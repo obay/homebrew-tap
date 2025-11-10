@@ -3,7 +3,7 @@ cask "hscli" do
   name "hscli"
   desc "A CLI tool for managing HubSpot contacts"
   homepage "https://github.com/obay/hscli"
-  version "0.3.0"
+  version "0.3.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "hscli" do
     on_intel do
       url "https://github.com/obay/hscli/releases/download/v#{version}/hscli_darwin_amd64.tar.gz",
         verified: "github.com/obay/hscli"
-      sha256 "0669e40a0b6fed10b9b30e33d91eff0b9037ea808bb2a585669ad6f4c17669f2"
+      sha256 "2ab4fa5d32f37de3cbd7e69db198219d8c9dd2afa9e844282a3829f639ab9c34"
     end
     on_arm do
       url "https://github.com/obay/hscli/releases/download/v#{version}/hscli_darwin_arm64.tar.gz",
         verified: "github.com/obay/hscli"
-      sha256 "3e5d738b0f5a953fc49c62c00d11d719c71e0b1dec5bd7eeff3468578572ce3a"
+      sha256 "138fae129136fa11aeea298a51e29ed7a5f921d0c55192593c9fac9af668e829"
     end
   end
 
@@ -28,12 +28,12 @@ cask "hscli" do
     on_intel do
       url "https://github.com/obay/hscli/releases/download/v#{version}/hscli_linux_amd64.tar.gz",
         verified: "github.com/obay/hscli"
-      sha256 "e10c11bd427672e919d67d1b9c11df033706e124d238e71b28712649aabc6e7c"
+      sha256 "c328bfec04cf293b4be14b7dd75b6c43afbba85399fbfb05b34d906db3ce9693"
     end
     on_arm do
       url "https://github.com/obay/hscli/releases/download/v#{version}/hscli_linux_arm64.tar.gz",
         verified: "github.com/obay/hscli"
-      sha256 "09c61823b681b547b5817545689d9b6906da948490bf5a8fdea090b1bf59b32e"
+      sha256 "f6fa106f89c136350e0f1979aede80e45c50e4bec95d720bca7a1efc03f2311d"
     end
   end
 
