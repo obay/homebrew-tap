@@ -5,21 +5,21 @@
 class Qbcli < Formula
   desc "Command-line interface for QuickBooks Online"
   homepage "https://github.com/obay/qbcli"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/obay/qbcli/releases/download/v0.1.0/qbcli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "fa7fc24fb42d1104e36bf76385a2395cb2f4bb6e1998d2f9a2c3cf8ef5a98293"
+      url "https://github.com/obay/qbcli/releases/download/v0.1.1/qbcli_0.1.1_darwin_amd64.tar.gz"
+      sha256 "c9605b73d68566aa86522be8cbe7f530bf21cdb0a291b08cf603e3cb34a6f053"
 
       def install
         bin.install "qbcli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/obay/qbcli/releases/download/v0.1.0/qbcli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "a73d6f3ecd3855ad72e5d432ffe93d1fccc8261415f4d0a2cf2165f1ff05d741"
+      url "https://github.com/obay/qbcli/releases/download/v0.1.1/qbcli_0.1.1_darwin_arm64.tar.gz"
+      sha256 "183463ea3c8643c7d5c0a73293c0304fbdd325644f8c5aef5cfa5895d0cb25bb"
 
       def install
         bin.install "qbcli"
@@ -29,15 +29,15 @@ class Qbcli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/obay/qbcli/releases/download/v0.1.0/qbcli_0.1.0_linux_amd64.tar.gz"
-      sha256 "cfb865ba9512a2630e0fc18b0a9fab33c5c8a5073688a0a8502e8ba59ca71abe"
+      url "https://github.com/obay/qbcli/releases/download/v0.1.1/qbcli_0.1.1_linux_amd64.tar.gz"
+      sha256 "d5dc718db19f82fc6dcd48100b19f71eca37c5d87bf46063f2a488cf1df203ef"
       def install
         bin.install "qbcli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/obay/qbcli/releases/download/v0.1.0/qbcli_0.1.0_linux_arm64.tar.gz"
-      sha256 "62b48a9005dbbf084d0b90e0a7aa10a88506016e5b37c76cb12dacac740db480"
+      url "https://github.com/obay/qbcli/releases/download/v0.1.1/qbcli_0.1.1_linux_arm64.tar.gz"
+      sha256 "e5156d501dd6a7f49e1c0b74a72d88f9effe3d9025a5db71b3316f5133f4c5a8"
       def install
         bin.install "qbcli"
       end
