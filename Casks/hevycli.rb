@@ -3,7 +3,7 @@ cask "hevycli" do
   name "hevycli"
   desc "CLI for the Hevy fitness tracking platform"
   homepage "https://github.com/obay/hevycli"
-  version "0.2.1"
+  version "0.3.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "hevycli" do
   on_macos do
     on_intel do
       url "https://github.com/obay/hevycli/releases/download/v#{version}/hevycli_#{version}_darwin_amd64.tar.gz"
-      sha256 "875bc5070c69baad3b1c1bfb3fab26f79fcead6796a42669a2fceb5bfad91180"
+      sha256 "0af520c1c49add5971667b9ff3542a2d05bef30ef1d998fd5e36d6daf9a2e889"
     end
     on_arm do
       url "https://github.com/obay/hevycli/releases/download/v#{version}/hevycli_#{version}_darwin_arm64.tar.gz"
-      sha256 "6752fef7d4942db4a990a4b829d136bd7b5e263a80c90f3d715291ce7cde87a0"
+      sha256 "2f86cfb60dd073f899a17baf77e51e8bf6664b291c1d80b87da1f2424617e8ab"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/obay/hevycli/releases/download/v#{version}/hevycli_#{version}_linux_amd64.tar.gz"
-      sha256 "1cad5cfa55059b5e98044af256fdc8fb13bdae2918117435e3580a21f0ad6813"
+      sha256 "418821d413b4803b6119699f5d61312329ff545817135c1eb05e56bdb7a04ffc"
     end
     on_arm do
       url "https://github.com/obay/hevycli/releases/download/v#{version}/hevycli_#{version}_linux_arm64.tar.gz"
-      sha256 "5d68eada5d8a5914517702bfae37b493649c96c66a94420ca87984bf33c00a14"
+      sha256 "25065a509a5cff8a0664ba2b01ed4ddb7771a4ec70e408cada2becd75b837490"
     end
   end
 
