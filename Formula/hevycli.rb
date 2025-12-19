@@ -5,21 +5,21 @@
 class Hevycli < Formula
   desc "CLI for the Hevy fitness tracking platform"
   homepage "https://github.com/obay/hevycli"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/obay/hevycli/releases/download/v0.1.0/hevycli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "c2f5aa29a46c39a721768ccb27ff8d6288e0232c57620df7d0ad086a665a3774"
+      url "https://github.com/obay/hevycli/releases/download/v0.2.0/hevycli_0.2.0_darwin_amd64.tar.gz"
+      sha256 "d522f28d165cc25f35a3733cf490744e90bc45902e0af94c2a6e9a6502b17097"
 
       def install
         bin.install "hevycli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/obay/hevycli/releases/download/v0.1.0/hevycli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "475b99f9133d97adbf28f1997deaefde783bfe5f90f841b059f6b2330c82ca40"
+      url "https://github.com/obay/hevycli/releases/download/v0.2.0/hevycli_0.2.0_darwin_arm64.tar.gz"
+      sha256 "40009ffa135545d06ff64292a6c0ed67b4e7d8271ee90f4dc6286e7258081c0a"
 
       def install
         bin.install "hevycli"
@@ -29,15 +29,15 @@ class Hevycli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/obay/hevycli/releases/download/v0.1.0/hevycli_0.1.0_linux_amd64.tar.gz"
-      sha256 "a2e4d96f16c7db987d0d5ca90b12d448bc424c2fe65eed0895e41a4e49cef348"
+      url "https://github.com/obay/hevycli/releases/download/v0.2.0/hevycli_0.2.0_linux_amd64.tar.gz"
+      sha256 "aff9e6d885c4251c85eb75d375065effdb3932e28b338e38476a85651bec6959"
       def install
         bin.install "hevycli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/obay/hevycli/releases/download/v0.1.0/hevycli_0.1.0_linux_arm64.tar.gz"
-      sha256 "516632640707ecdc4c37db7b8c85371cbfd82e9c1a3c971056030bb83e28ddbd"
+      url "https://github.com/obay/hevycli/releases/download/v0.2.0/hevycli_0.2.0_linux_arm64.tar.gz"
+      sha256 "70db198c696e805fcede1496c542ee3d5a09512bac220092a8893de8a0d87303"
       def install
         bin.install "hevycli"
       end
