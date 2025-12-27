@@ -5,20 +5,20 @@
 class Tfren < Formula
   desc "Terraform file organizer - splits and renames files according to OTN naming convention."
   homepage "https://github.com/obay/tfren"
-  version "1.0.3"
+  version "1.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/obay/tfren/releases/download/v1.0.3/tfren_Darwin_x86_64.tar.gz"
-      sha256 "889f794312774cc87ed5b63fab98ff38117c304dfa2611f72f76601b40dc75da"
+      url "https://github.com/obay/tfren/releases/download/v1.0.4/tfren_Darwin_x86_64.tar.gz"
+      sha256 "7e1b4ee765279ffab48ea2375825cbe9298cbc24e592c12f444209ea981a9d45"
 
       def install
         bin.install "tfren"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/obay/tfren/releases/download/v1.0.3/tfren_Darwin_arm64.tar.gz"
-      sha256 "94aac8a7eeea678538199710091a8816d27d83c1267d38aeb2c0f63fdb750dcf"
+      url "https://github.com/obay/tfren/releases/download/v1.0.4/tfren_Darwin_arm64.tar.gz"
+      sha256 "e928427624aca8669135af8206dbdfaa7ae8ebebc8fbebfa228e2d5532330fae"
 
       def install
         bin.install "tfren"
@@ -28,15 +28,15 @@ class Tfren < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/obay/tfren/releases/download/v1.0.3/tfren_Linux_x86_64.tar.gz"
-      sha256 "24eeb45aaab33fb2b581922cad04b2615af2a63edce5ba9896a0ac08d462be77"
+      url "https://github.com/obay/tfren/releases/download/v1.0.4/tfren_Linux_x86_64.tar.gz"
+      sha256 "7a234a026b5e5924088bafe275ecbc4b89137e6eb8f0196a86222c7b347602e2"
       def install
         bin.install "tfren"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/obay/tfren/releases/download/v1.0.3/tfren_Linux_arm64.tar.gz"
-      sha256 "21de53c0df250fbd57ab7e1bb9b3cac7913607baa8b371da803d390dcdb1cb9d"
+      url "https://github.com/obay/tfren/releases/download/v1.0.4/tfren_Linux_arm64.tar.gz"
+      sha256 "feba64250f1a11f1a82f313bb5ea342eddb814db6c67a0ec79fef28829c3c65c"
       def install
         bin.install "tfren"
       end
