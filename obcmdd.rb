@@ -5,13 +5,13 @@
 class Obcmdd < Formula
   desc "HTTPS relay for the obcmd remote-exec system"
   homepage "https://github.com/obay/obcmd"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/obay/obcmd/releases/download/v0.1.1/obcmdd_0.1.1_darwin_amd64.tar.gz"
-      sha256 "6ad794c479d6ecc7ec4dbdd23d1077390b6fc48519c5d3c649c7b96e788d5711"
+      url "https://github.com/obay/obcmd/releases/download/v0.1.2/obcmdd_0.1.2_darwin_amd64.tar.gz"
+      sha256 "6d28afbb1cf40413f6c05f66cd87636b871c95b0c1290c5505486b3e2e0119ba"
 
       define_method(:install) do
         bin.install "obcmdd"
@@ -21,8 +21,8 @@ class Obcmdd < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/obay/obcmd/releases/download/v0.1.1/obcmdd_0.1.1_darwin_arm64.tar.gz"
-      sha256 "949b95b746519c09d4974abeecff015bb640f73996de50e7158614df046c0edc"
+      url "https://github.com/obay/obcmd/releases/download/v0.1.2/obcmdd_0.1.2_darwin_arm64.tar.gz"
+      sha256 "e1dac3571d7ae72b725c05ef17f8dd01279504e1d5a40d94bb0028d84af37030"
 
       define_method(:install) do
         bin.install "obcmdd"
@@ -35,8 +35,8 @@ class Obcmdd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/obay/obcmd/releases/download/v0.1.1/obcmdd_0.1.1_linux_amd64.tar.gz"
-      sha256 "d5e25e77ebdf6418673a4bacb162dd399096db3260acaab915811d35587e3a5d"
+      url "https://github.com/obay/obcmd/releases/download/v0.1.2/obcmdd_0.1.2_linux_amd64.tar.gz"
+      sha256 "834900c65c7dadbbbe1ab20e6e9d37054b45478fb117e0e9f0343f7fe19e7854"
       define_method(:install) do
         bin.install "obcmdd"
         (etc/"obcmd").mkpath
@@ -45,8 +45,8 @@ class Obcmdd < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/obay/obcmd/releases/download/v0.1.1/obcmdd_0.1.1_linux_arm64.tar.gz"
-      sha256 "11be635be257adee74520af2e2b28fd570881b58857e74a27f63d2c3c9d48a92"
+      url "https://github.com/obay/obcmd/releases/download/v0.1.2/obcmdd_0.1.2_linux_arm64.tar.gz"
+      sha256 "da167439baefc2125b02f9e4175f94fd3ac9a734fd110b7449f92cbd844981f2"
       define_method(:install) do
         bin.install "obcmdd"
         (etc/"obcmd").mkpath
