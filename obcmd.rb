@@ -5,21 +5,21 @@
 class Obcmd < Formula
   desc "Operator CLI for the obcmd remote-exec relay"
   homepage "https://github.com/obay/obcmd"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/obay/obcmd/releases/download/v0.1.1/obcmd_0.1.1_darwin_amd64.tar.gz"
-      sha256 "4dd48aba59a2a99c32413ba4e48ed28974f4aae52503df50e5b670df164dcea1"
+      url "https://github.com/obay/obcmd/releases/download/v0.1.2/obcmd_0.1.2_darwin_amd64.tar.gz"
+      sha256 "da63769464d67437a60b9f0b24e7624c601743e641a895bfbbc2339670b2b848"
 
       define_method(:install) do
         bin.install "obcmd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/obay/obcmd/releases/download/v0.1.1/obcmd_0.1.1_darwin_arm64.tar.gz"
-      sha256 "542ff84e74852f52aab8bbdba829ef2338738b65fadce229165b001655019d3f"
+      url "https://github.com/obay/obcmd/releases/download/v0.1.2/obcmd_0.1.2_darwin_arm64.tar.gz"
+      sha256 "4a3089791ff096d12078029d6095235600423cf453bc498f65956bf2791b6963"
 
       define_method(:install) do
         bin.install "obcmd"
@@ -29,15 +29,15 @@ class Obcmd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/obay/obcmd/releases/download/v0.1.1/obcmd_0.1.1_linux_amd64.tar.gz"
-      sha256 "b48dde7a97b04822b7dec449bdd3cd6b119e223290552111219df645dd2e9c5e"
+      url "https://github.com/obay/obcmd/releases/download/v0.1.2/obcmd_0.1.2_linux_amd64.tar.gz"
+      sha256 "29402220f1a0a8fa3595bc40b5942678c6cf061092fb8f395a69a7aced66cc5f"
       define_method(:install) do
         bin.install "obcmd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/obay/obcmd/releases/download/v0.1.1/obcmd_0.1.1_linux_arm64.tar.gz"
-      sha256 "44bebc8795574643fa506a9e4f46fb447704d3b6cd15d980de3ee5901ee0d60d"
+      url "https://github.com/obay/obcmd/releases/download/v0.1.2/obcmd_0.1.2_linux_arm64.tar.gz"
+      sha256 "80cbb334d3463b925dd79bf32d35ee1fd7b51c0529bfbd451d9e8969c447d874"
       define_method(:install) do
         bin.install "obcmd"
       end
