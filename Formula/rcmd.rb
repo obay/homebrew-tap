@@ -5,21 +5,21 @@
 class Rcmd < Formula
   desc "Operator CLI for the rcmd remote-exec relay"
   homepage "https://github.com/obay/rcmd"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/obay/rcmd/releases/download/v0.2.1/rcmd_0.2.1_darwin_amd64.tar.gz"
-      sha256 "15bb835364e0c4181382b1b9f5af28381eed62e238211424a2db9b9e6bf5dd8b"
+      url "https://github.com/obay/rcmd/releases/download/v0.2.2/rcmd_0.2.2_darwin_amd64.tar.gz"
+      sha256 "17e4069c32637dc9888f36a1e02b8c8f6ed0d5ce0b8659ce41d6d3d4571662f0"
 
       define_method(:install) do
         bin.install "rcmd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/obay/rcmd/releases/download/v0.2.1/rcmd_0.2.1_darwin_arm64.tar.gz"
-      sha256 "5ba688bc9a1af254c2fb52a20f50b0ef7265a6b1e861f7b1ae45816a3dac4400"
+      url "https://github.com/obay/rcmd/releases/download/v0.2.2/rcmd_0.2.2_darwin_arm64.tar.gz"
+      sha256 "880d4618d071f18b269fcbb60d2fc5fb8363d87ea1d1a6f51df7bcc631969b2b"
 
       define_method(:install) do
         bin.install "rcmd"
@@ -29,15 +29,15 @@ class Rcmd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/obay/rcmd/releases/download/v0.2.1/rcmd_0.2.1_linux_amd64.tar.gz"
-      sha256 "965bed1e2efdd02c5bfcf5ccdf2f46d1a593f0461f1982a5fd2b5493181674c3"
+      url "https://github.com/obay/rcmd/releases/download/v0.2.2/rcmd_0.2.2_linux_amd64.tar.gz"
+      sha256 "c19f899de5c8ba436a96e3eda4ba7c8aeafe7c1565f81e22116df9c15126337f"
       define_method(:install) do
         bin.install "rcmd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/obay/rcmd/releases/download/v0.2.1/rcmd_0.2.1_linux_arm64.tar.gz"
-      sha256 "785ea4d2693999641a34a73544fd1e0cf006176633e8190fa040d7afd0c642b5"
+      url "https://github.com/obay/rcmd/releases/download/v0.2.2/rcmd_0.2.2_linux_arm64.tar.gz"
+      sha256 "b58a34a55ab0bd039929dfc14d8e44a3133aaca2afe682344f9e4bcc49d55760"
       define_method(:install) do
         bin.install "rcmd"
       end
